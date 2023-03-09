@@ -9,6 +9,6 @@ module.exports = {
         baseUrl: '.',
         tsConfigPath: './tsconfig.extend.json'
       }
-    },
+    }
   ]
 }

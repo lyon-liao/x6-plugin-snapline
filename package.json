@@ -1,8 +1,9 @@
 {
   "name": "x6-plugin-snapline",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "dependencies": {
+    "@antv/x6": "^2.5.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -18,13 +19,19 @@
   },
   "devDependencies": {
     "@craco/craco": "7.0.0",
-    "craco-alias": "^3.0.1"
+    "@rollup/plugin-typescript": "^11.0.0",
+    "craco-alias": "^3.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
   },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "clear": "rm -rf lib/",
+    "build:lib": "npm run clear && rollup -c"
   },
   "eslintConfig": {
     "extends": [
@@ -32,6 +39,9 @@
       "react-app/jest"
     ]
   },
+  "files": [
+    "lib"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",

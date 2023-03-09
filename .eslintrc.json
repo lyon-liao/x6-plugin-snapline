@@ -1,0 +1,36 @@
+{
+  "extends": ["react-app", "prettier"],
+  "plugins": ["prettier"],
+  "ignorePatterns": ["public/libs/*.js"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "jsx-quotes": [1, "prefer-single"],
+    "no-class-assign": "error",
+    "no-dupe-keys": "error",
+    "no-dupe-args": "error",
+    "no-duplicate-case": "error",
+    "no-fallthrough": 0,
+    "no-func-assign": "error",
+    "no-multi-spaces": "warn",
+    "no-var": "error",
+    "eqeqeq": [2, "allow-null"],
+    "quotes": [1, "single"],
+    "no-unreachable": "error",
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 2
+      }
+    ],
+    "camelcase": "warn",
+    "react/jsx-key": 2,
+    "react/jsx-max-props-per-line": 0,
+    "space-infix-ops": "error",
+    "jsx-a11y/anchor-is-valid": "off"
+  }
+}
